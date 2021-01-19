@@ -1,0 +1,127 @@
+.header {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #ececec;
+  & .container {
+  display: flex;
+  align-items: center;
+}
+& .logo-right {
+  margin-right: 93px;
+}
+& .address {
+  margin-left: auto;
+}
+
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  &-list {
+  display: flex;
+  &-item:not(:last-child) {
+  margin-right: 50px;
+}
+}
+}
+
+.logo-link {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: var(--accent-color);
+}
+.logo-right {
+  color: #000000;
+  &-dark {
+  color: var(--primary-white-color);
+}
+}
+
+.navigation-list-link,
+.navigation-list-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.navigation-list-link {
+  display: block;
+  position: relative;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -40px;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-color);
+  border-radius: 2px;
+  transform: scaleX(0);
+}
+& .link.current::after {
+  background-color: currentColor;
+}
+&.current::after {
+  transform: scaleX(1);
+}
+}
+
+
+
+.navigation-list-link:hover,
+.navigation-list-link:focus,
+.header-contact-mail:hover,
+.header-contact-mail:focus,
+.header-contact-tel:hover,
+.header-contact-tel:focus {
+  color: var(--accent-color);
+}
+.navigation-list .link.current {
+  color: var(--accent-color);
+}
+.header-contact-mail:hover .header-icon,
+.header-contact-mail:focus .header-icon,
+.header-contact-tel:hover .header-icon,
+.header-contact-tel:focus .header-icon {
+  fill: currentColor;
+}
+
+
+.header-icon {
+  width: 16px;
+  height: 19px;
+  fill: #757575;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 30px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.header-contact-mail,
+.header-contact-tel {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+  display: inline-flex;
+  align-items: center;
+  fill: #757575;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  color: var(--secondary-text-color);
+}
+
+.address {
+  font-style: normal;
+  &-link {
+  display: inline-flex;
+  align-items: baseline;
+}
+}
