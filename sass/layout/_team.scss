@@ -109,6 +109,10 @@
   }
 }
 @media screen and (min-width: 1200px) {
+  .social-list-item {
+    padding-bottom: 30px;
+    padding-top: 0;
+  }
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -123,15 +127,17 @@
 
     &-list {
       display: flex;
-
+      //&-discription {
+      //  padding: 30px 32px;
+      //}
       &-item {
         width: calc((100% - 90px) / 4);
         margin-right: 30px;
         margin-bottom: 0;
         height: 428px;
       }
-      &-item:not(:last-child) {
-        margin-right: 30px;
+      &-item:last-child {
+        margin-right: 0;
       }
     }
   }
