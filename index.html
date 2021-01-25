@@ -17,7 +17,7 @@
             <nav class="navigations container">
                 
                 <a class="logo-link link" href="#" aria-label="логотип сайта">
-                <span class="logo-link">Web</span>
+                <span class="logo-left">Web</span>
                 <span class="logo-right">Studio</span>
                 </a>
                  
@@ -26,7 +26,7 @@
                 aria-expanded="false" 
                 aria-controls="menu-container"
                 data-menu-button>
-                    <svg width="40" height="40" aria-lable="Переключатель мобильного меню">
+                    <svg class="close-menu" width="40" height="40" aria-lable="Переключатель мобильного меню">
                         <use class="icon-close" href="./symbol-defs-header.svg#icon-close" width="19" height="19"></use>
                         <use class="icon-menu" href="./symbol-defs-header.svg#icon-menu" width="24" height="16"></use>
                     </svg>
@@ -35,7 +35,7 @@
                     <div class="navigation">
                         <ul class="navigation-list list">
                         <li class="navigation-list-item">
-                            <a class="navigation-list-link link current" href="#">Студия</a>
+                            <a class="navigation-list-link link current" href="./">Студия</a>
                         </li>
                         <li class="navigation-list-item">
                             <a class="navigation-list-link link" href="./portfolio.html">Портфолио</a>
@@ -61,12 +61,12 @@
                                 </a></li>
                         </ul>
                         </address>
-                        <!--<ul class="header-social-list">
+                        <ul class="header-social-list">
                             <li class="social-header-item list">Instagram</li>
                             <li class="social-header-item list">Twitter</li>
                             <li class="social-header-item list">Facebook</li>
                             <li class="social-header-item list">LinkedIn</li>
-                        </ul>-->
+                        </ul>
                     </div>      
     
             
@@ -526,69 +526,75 @@
     </main>
     <footer class="footer">
         <div class="footer-container-address container">
-            <div class="footer-logo-address">
-                <a class="footer-logo-link link" href="/" aria-label="логотип сайта">
-                    <span class="logo-link">Web</span><span class="logo-right-dark">Studio</span></a>
-            <address class="address">
-                <ul class="footer-address-list list">
-                    <li class="footer-address-list-item"><p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p></li>
-                    <li class="footer-address-list-item"><a class="footer-contact-mail link" href="mailto:info@example.com">info@example.com</a></li> 
-                    <li class="footer-address-list-item"><a class="footer-contact-tel link" href="tel:+380991111111">+38 096 111 11 11</a></li>
-                </ul>
-            </address></div>
-            <div class="footer-container-connect">
-             
-                <p class="connect">ПРИСОЕДИНЯЙТЕСЬ</p>
-                <ul class="footer-social-list list">
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-link link" href="">
-                        <svg class="footer-social-list-icon">
-                        <use href="./sprite.svg#icon-instagram"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-link link" href="">
-                        <svg class="footer-social-list-icon">
-                        <use href="./sprite.svg#icon-twitter"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-link link" href="">
-                        <svg class="footer-social-list-icon">
-                        <use href="./sprite.svg#icon-facebook"></use>
-                        </svg>
-                        </a>
-                    </li>
-                    <li class="footer-social-list-item">
-                        <a class="footer-social-list-link link" href="">
-                        <svg class="footer-social-list-icon">
-                        <use href="./sprite.svg#icon-linkedin"></use>
-                        </svg>
-                        </a>
-                    </li>
-                </ul>
+            <div class="footer-tablet">
+                <div class="footer-logo-address">
+                    <a class="footer-logo-link link" href="/" aria-label="логотип сайта">
+                        <span class="logo-left">Web</span><span class="logo-right-dark">Studio</span></a>
+                    <address class="address">
+                        <ul class="footer-address-list list">
+                            <li class="footer-address-list-item">
+                                <p class="footer-address">г. Киев, пр-т Леси Украинки, 26</p>
+                            </li>
+                            <li class="footer-address-list-item"><a class="footer-contact-mail link"
+                                    href="mailto:info@example.com">info@example.com</a></li>
+                            <li class="footer-address-list-item"><a class="footer-contact-tel link"
+                                    href="tel:+380991111111">+38 096 111 11 11</a></li>
+                        </ul>
+                    </address>
+                </div>
+                <div class="footer-container-connect">
+    
+                    <p class="connect">ПРИСОЕДИНЯЙТЕСЬ</p>
+                    <ul class="footer-social-list list">
+                        <li class="footer-social-list-item">
+                            <a class="footer-social-list-link link" href="">
+                                <svg class="footer-social-list-icon">
+                                    <use href="./sprite.svg#icon-instagram"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a class="footer-social-list-link link" href="">
+                                <svg class="footer-social-list-icon">
+                                    <use href="./sprite.svg#icon-twitter"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a class="footer-social-list-link link" href="">
+                                <svg class="footer-social-list-icon">
+                                    <use href="./sprite.svg#icon-facebook"></use>
+                                </svg>
+                            </a>
+                        </li>
+                        <li class="footer-social-list-item">
+                            <a class="footer-social-list-link link" href="">
+                                <svg class="footer-social-list-icon">
+                                    <use href="./sprite.svg#icon-linkedin"></use>
+                                </svg>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            
             <form action="#" class="modal-footer-form">
                 <p class="modal-footer-form-text">Подпишитесь на рассылку</p>
                 <div class="footer-form-subscribe">
-                <label class="modal-footer-form-field">
-                        
+                    <label class="modal-footer-form-field">
+    
                         <input type="email" name="user-email" class="modal-footer-form-input" placeholder="E-mail">
-                </label>
-                <button type="submit" class="modal-footer-form-btn">Подписаться
-                    <svg class="footer-icon-send">
-                        <use href="./sprite.svg#icon-send"></use>
-                    </svg>
-                </button>
+                    </label>
+                    <button type="submit" class="modal-footer-form-btn">Подписаться
+                        <svg class="footer-icon-send">
+                            <use href="./sprite.svg#icon-send"></use>
+                        </svg>
+                    </button>
                 </div>
             </form>
-            
-        
+    
+    
         </div>
-    </footer> 
+    </footer>
     <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
 </body>
